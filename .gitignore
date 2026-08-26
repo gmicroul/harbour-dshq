@@ -1,0 +1,14 @@
+# qmake build artifacts (contain local absolute paths)
+Makefile*
+*.pro.user
+.qmake.stash
+
+# compiled objects / generated moc files
+*.o
+moc_*.cpp
+
+# built binary
+harbour-dshq
+
+# packaging scratch dirs
+.tmp/
