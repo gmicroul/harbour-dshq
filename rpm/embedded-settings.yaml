@@ -1,0 +1,56 @@
+permission:
+  defaultPreset: danger-full-access
+ui-onboarding:
+  welcomeNoticeVersion: 2026-08-13.1
+agent-default-model:
+  provider: kilo
+  model: kilo-auto/free
+llm-pi-ai:
+  providers:
+    opencode:
+      displayName: OpenCode Zen
+      api: openai-completions
+      baseURL: https://opencode.ai/zen/v1
+      apiKeyEnv: OPENCODE_API_KEY
+      models:
+        - id: big-pickle
+          name: Big Pickle
+          contextWindow: 1000000
+        - id: deepseek-v4-flash-free
+          name: DeepSeek V4 Flash Free
+          contextWindow: 1000000
+        - id: muse-spark-1.2-contributor-free
+          name: Muse Spark 1.2 Contributor Free
+          contextWindow: 1000000
+        - id: mimo-v2.5-free
+          name: MiMo-V2.5 Free
+          contextWindow: 1000000
+        - id: hy3-free
+          name: Hy3 Free
+          contextWindow: 1000000
+        - id: nemotron-3-ultra-free
+          name: Nemotron 3 Ultra Free
+          contextWindow: 1000000
+        - id: nemotron-3.5-lightning-free
+          name: Nemotron 3.5 Lightning Free
+          contextWindow: 1000000
+        - id: laguna-s-2.1-free
+          name: Laguna S 2.1 Free
+          contextWindow: 1000000
+        - id: ling-3.0-flash-fin-free
+          name: Ling 3.0 Flash Fin Free
+          contextWindow: 1000000
+        - id: north-mini-code-free
+          name: North Mini Code Free
+          contextWindow: 1000000
+    kilo:
+      displayName: Kilo AI Gateway (Free)
+      api: openai-completions
+      baseURL: https://api.kilo.ai/api/gateway
+      headers:
+        Authorization: Bearer public
+      models:
+        - id: kilo-auto/free
+          name: Kilo Auto Free
+          contextWindow: 256000
+          maxTokens: 10000

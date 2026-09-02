@@ -1,0 +1,14 @@
+[Unit]
+Description=DeepSeek Harness web UI (bundled, embedded Node.js)
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/bash /usr/lib64/harbour-dshq/start-dsh-web.sh
+Restart=on-failure
+RestartSec=3
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=default.target

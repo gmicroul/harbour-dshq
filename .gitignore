@@ -12,3 +12,25 @@ harbour-dshq
 
 # packaging scratch dirs
 .tmp/
+
+# Embedded tarballs (large binaries)
+embedded/node-modules.tar.xz
+embedded/dsh-template.tar.xz
+embedded/
+
+# rpmbuild
+rpmbuild/
+*.rpm
+
+# Node modules
+node_modules/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
